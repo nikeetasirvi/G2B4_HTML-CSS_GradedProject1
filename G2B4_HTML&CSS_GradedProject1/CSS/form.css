@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#window {
+    height: 500px;
+    width: 85%;
+    margin: 5% 7.5% 2% 7.5%;
+    overflow-y: scroll;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+}
+.section img {
+    height: 100%;
+    width: 100%;
+}
+.section {
+    float: left;
+    height: 500px;
+    width: 52%;
+}
+#image{
+	width: 40%;
+	position: fixed;
+	left: 51.3%;
+}
+article{
+	margin: 8%;
+}
+input{
+	margin: 1%;
+	width: 40%;
+   	border: none;
+   	background-color: white;
+    border-bottom: 1px solid gray;
+    height: 40px;
+    font-size: 15.33px;
+}
+input:focus{
+	outline: none;
+    border-bottom:1px solid black;
+}
+input[name^="copy"],input[name^="test"]{
+	width: 15%;
+	height: 20px;
+}
+#district{
+	font-size: 15.33px;
+	width: 30%;
+	height: 40px;
+}
+#btndiv{
+	margin-left: 30%; 
+}
+button{
+	font-size: 16px;
+	margin-left: 5%;
+	color: white;
+	width: 8%;
+	height: 30px;
+	background-color: #9966CC;
+	border: none;
+	border-radius: 8%;
+}

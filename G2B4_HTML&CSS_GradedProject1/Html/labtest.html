@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab Test</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/form.css">
+</head>
+<body>
+	<div id="window">
+		<div class="section">
+			<form id="form" action="" onsubmit="return validate();">
+				<article>
+					<h2>1. Your Contact Details</h2>
+					<input type="text" title="fullname" name="fullname" placeholder="Full Name" required>
+					<input type="text" title="patientid" name="patientid" placeholder="Patient Id if exist" required>
+					<input type="number" title="contactno" name="contactno" placeholder="Contact Number" min="6000000000" max="9999999999" required>
+					<input type="email" title="emailid" name="emailid" placeholder="Email Id" required>
+				</article>
+
+				<article>
+					<h2>2. Address</h2>
+					<input type="text" title="hno" name="hno" placeholder="H-No" required>
+					<input type="text" title="street" name="street" placeholder="Street" required>
+					<input type="text" title="area" name="area" placeholder="Area" required>
+					<h3>District</h3>
+					<select name="district" id="district" required>
+						<option value="">Choose</option>
+						<option value="bangalore">Bangalore</option>
+						<option value="surat">Surat</option>
+						<option value="pali">Pali</option>
+					</select>
+				</article>
+
+				<article>
+					<h2>3. Test Type</h2>
+					<p>Check atleast one box without fail</p>
+					<label for="c1"><input type="checkbox" name="test" id="c1" value="CBC">CBC</label><br>
+					<label for="c2"><input type="checkbox" name="test" id="c2" value="Complete Urine">Complete Urine</label><br>
+					<label for="c3"><input type="checkbox" name="test" id="c3" value="Lipid Profile">Lipid Profile</label><br>
+					<label for="c4"><input type="checkbox" name="test" id="c4" value="Thyroid Stimulating Harmone(TSH)">Thyroid Stimulating Harmone(TSH)</label><br>
+					<label for="c5"><input type="checkbox" name="test" id="c5" value="Glucose Test">Glucose Test</label>
+				</article>
+
+				<article>
+					<h2>4. Do you want a hardcopy of a repost also?</h2>
+					<label for="r2"><input type="radio" name="copy" id="r1" value="Yes">Yes</label><br>
+					<label for="r1"><input type="radio" name="copy" id="r2" value="No">No</label>
+				</article>
+
+				<article>
+					<h2>5. Select your comfortable date and time</h2>
+					<input type="date" name="date" id="currentDate" required>
+					<input type="time" name="time" id="currentTime" required>
+				</article><br>
+			</form>
+		</div>
+		<div class="section" id="image">
+			<img src="../Images/Lab-Test/lab-test.jpg">
+		</div>
+	</div>
+	<div id="btndiv">
+		<button type="Reset" form="form">Reset</button>
+		<button type="Submit" form="form">Submit</button>
+	</div>
+	<script type="text/javascript" src="../javascript/labtest.js"></script>
+</body>
+</html>
